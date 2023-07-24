@@ -1,0 +1,35 @@
+#taken from : https://github.com/deedy5/duckduckgo_search
+
+def images(
+    keywords: str,
+    region: str = "wt-wt",
+    safesearch: str = "moderate",
+    timelimit: Optional[str] = None,
+    size: Optional[str] = None,
+    color: Optional[str] = None,
+    type_image: Optional[str] = None,
+    layout: Optional[str] = None,
+    license_image: Optional[str] = None,
+) -> Iterator[Dict[str, Optional[str]]]:
+    """DuckDuckGo images search. Query params: https://duckduckgo.com/params
+
+    Args:
+        keywords: keywords for query.
+        region: wt-wt, us-en, uk-en, ru-ru, etc. Defaults to "wt-wt".
+        safesearch: on, moderate, off. Defaults to "moderate".
+        timelimit: Day, Week, Month, Year. Defaults to None.
+        size: Small, Medium, Large, Wallpaper. Defaults to None.
+        color: color, Monochrome, Red, Orange, Yellow, Green, Blue,
+            Purple, Pink, Brown, Black, Gray, Teal, White. Defaults to None.
+        type_image: photo, clipart, gif, transparent, line.
+            Defaults to None.
+        layout: Square, Tall, Wide. Defaults to None.
+        license_image: any (All Creative Commons), Public (PublicDomain),
+            Share (Free to Share and Use), ShareCommercially (Free to Share and Use Commercially),
+            Modify (Free to Modify, Share, and Use), ModifyCommercially (Free to Modify, Share, and
+            Use Commercially). Defaults to None.
+
+    Yields:
+        dict with image search results.
+
+    """
