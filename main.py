@@ -2,12 +2,7 @@ from image_finder import ImageFinder
 
 
 finder = ImageFinder("any")
-<<<<<<< HEAD
-finder.get_data("fusarium", "microscopic image of fusarium", 50)
-=======
 finder.get_data("folder_name", "topic", 10)
->>>>>>> a394365 (updates)
-
 
 
 '''

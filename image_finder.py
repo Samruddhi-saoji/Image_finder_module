@@ -109,22 +109,3 @@ class ImageFinder :
 
 
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-'''#driver code ###########################
-topic = "sleeping corgi puppies"
-n = 2
-
-images = search(topic, n)
-save_images(images, "puppies photos")
-
-'''
-=======
->>>>>>> a394365 (updates)
