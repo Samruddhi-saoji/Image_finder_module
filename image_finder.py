@@ -109,6 +109,7 @@ class ImageFinder :
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -125,3 +126,5 @@ images = search(topic, n)
 save_images(images, "puppies photos")
 
 '''
+=======
+>>>>>>> a394365 (updates)
